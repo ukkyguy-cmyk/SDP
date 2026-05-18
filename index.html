@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -16,13 +17,13 @@ body {
 
 /* NAV */
 .nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 16px 40px;
-  background: rgba(10,10,10,0.85); backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(42,42,42,0.5);
+position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+display: flex; justify-content: space-between; align-items: center;
+padding: 16px 40px;
+background: rgba(10,10,10,0.85); backdrop-filter: blur(12px);
+border-bottom: 1px solid rgba(42,42,42,0.5);
 }
-.nav-brand { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: #c9a84c; letter-spacing: 2px; text-decoration: none; }
+.nav-brand { font-family: ‘Bebas Neue’, sans-serif; font-size: 20px; color: #c9a84c; letter-spacing: 2px; text-decoration: none; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a { font-size: 11px; letter-spacing: 2px; color: #888880; text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover { color: #c9a84c; }
@@ -30,85 +31,85 @@ body {
 
 /* HERO */
 .hero {
-  min-height: 100vh; position: relative;
-  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
-  padding: 60px 40px 60px 60px; overflow: hidden;
+min-height: 100vh; position: relative;
+display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+padding: 60px 40px 60px 60px; overflow: hidden;
 }
 .hero-bg {
-  position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 70% 40%, rgba(201,168,76,0.06) 0%, transparent 60%),
-              radial-gradient(ellipse at 20% 80%, rgba(76,143,201,0.04) 0%, transparent 50%),
-              #0a0a0a;
+position: absolute; inset: 0;
+background: radial-gradient(ellipse at 70% 40%, rgba(201,168,76,0.06) 0%, transparent 60%),
+radial-gradient(ellipse at 20% 80%, rgba(76,143,201,0.04) 0%, transparent 50%),
+#0a0a0a;
 }
 .hero-grid {
-  position: absolute; inset: 0;
-  background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 80%);
-  mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 80%);
+position: absolute; inset: 0;
+background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+background-size: 60px 60px;
+-webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 80%);
+mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 80%);
 }
 .hero-paw {
-  position: absolute; right: -40px; top: 50%; transform: translateY(-50%);
-  font-size: 320px; opacity: 0.03; line-height: 1; user-select: none;
+position: absolute; right: -40px; top: 50%; transform: translateY(-50%);
+font-size: 320px; opacity: 0.03; line-height: 1; user-select: none;
 }
 .hero-eyebrow {
-  position: relative; font-size: 11px; letter-spacing: 4px; color: #c9a84c;
-  text-transform: uppercase; font-weight: 500; margin-bottom: 24px;
-  display: flex; align-items: center; gap: 12px;
+position: relative; font-size: 11px; letter-spacing: 4px; color: #c9a84c;
+text-transform: uppercase; font-weight: 500; margin-bottom: 24px;
+display: flex; align-items: center; gap: 12px;
 }
-.hero-eyebrow::before { content: ''; display: inline-block; width: 32px; height: 1px; background: #c9a84c; }
+.hero-eyebrow::before { content: ‘’; display: inline-block; width: 32px; height: 1px; background: #c9a84c; }
 .hero-title {
-  position: relative; font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(56px, 10vw, 120px); line-height: 0.9; letter-spacing: 2px;
-  color: #e8e4dc; margin-bottom: 8px;
+position: relative; font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(56px, 10vw, 120px); line-height: 0.9; letter-spacing: 2px;
+color: #e8e4dc; margin-bottom: 8px;
 }
 .hero-title span { color: #c9a84c; }
 .hero-subtitle {
-  position: relative; font-size: clamp(16px, 3vw, 28px); font-weight: 300;
-  color: #888880; margin-bottom: 48px; letter-spacing: 6px;
+position: relative; font-size: clamp(16px, 3vw, 28px); font-weight: 300;
+color: #888880; margin-bottom: 48px; letter-spacing: 6px;
 }
 .hero-stats-row { position: relative; display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 56px; }
 .hero-stat { border-left: 2px solid #c9a84c; padding-left: 16px; }
-.hero-stat-num { font-family: 'DM Mono', monospace; font-size: clamp(28px, 4vw, 44px); font-weight: 500; color: #c9a84c; line-height: 1; }
+.hero-stat-num { font-family: ‘DM Mono’, monospace; font-size: clamp(28px, 4vw, 44px); font-weight: 500; color: #c9a84c; line-height: 1; }
 .hero-stat-label { font-size: 10px; letter-spacing: 2px; color: #888880; margin-top: 4px; }
 .hero-cta { position: relative; display: flex; gap: 16px; flex-wrap: wrap; }
 
 .btn-primary {
-  background: #c9a84c; color: #0a0a0a; border: none; padding: 14px 32px;
-  font-family: 'Noto Sans JP', sans-serif; font-size: 13px; font-weight: 700;
-  letter-spacing: 2px; cursor: pointer; text-decoration: none; display: inline-block;
-  transition: background 0.2s, transform 0.2s;
+background: #c9a84c; color: #0a0a0a; border: none; padding: 14px 32px;
+font-family: ‘Noto Sans JP’, sans-serif; font-size: 13px; font-weight: 700;
+letter-spacing: 2px; cursor: pointer; text-decoration: none; display: inline-block;
+transition: background 0.2s, transform 0.2s;
 }
 .btn-primary:hover { background: #e8c96a; transform: translateY(-2px); }
 .btn-secondary {
-  background: transparent; color: #c9a84c; border: 1px solid #c9a84c; padding: 14px 32px;
-  font-family: 'Noto Sans JP', sans-serif; font-size: 13px; font-weight: 500;
-  letter-spacing: 2px; cursor: pointer; text-decoration: none; display: inline-block;
-  transition: all 0.2s;
+background: transparent; color: #c9a84c; border: 1px solid #c9a84c; padding: 14px 32px;
+font-family: ‘Noto Sans JP’, sans-serif; font-size: 13px; font-weight: 500;
+letter-spacing: 2px; cursor: pointer; text-decoration: none; display: inline-block;
+transition: all 0.2s;
 }
 .btn-secondary:hover { background: rgba(201,168,76,0.1); transform: translateY(-2px); }
 
 .scroll-hint {
-  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  color: #888880; font-size: 10px; letter-spacing: 3px; animation: bounce 2s infinite;
+position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+display: flex; flex-direction: column; align-items: center; gap: 8px;
+color: #888880; font-size: 10px; letter-spacing: 3px; animation: bounce 2s infinite;
 }
 .scroll-hint::after {
-  content: ''; display: block; width: 1px; height: 40px;
-  background: linear-gradient(to bottom, #c9a84c, transparent);
+content: ‘’; display: block; width: 1px; height: 40px;
+background: linear-gradient(to bottom, #c9a84c, transparent);
 }
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(-8px); }
+0%, 100% { transform: translateX(-50%) translateY(0); }
+50%       { transform: translateX(-50%) translateY(-8px); }
 }
 
 /* SECTIONS */
 .section-label {
-  font-size: 10px; letter-spacing: 4px; color: #c9a84c; text-transform: uppercase;
-  font-weight: 500; margin-bottom: 16px; display: flex; align-items: center; gap: 12px;
+font-size: 10px; letter-spacing: 4px; color: #c9a84c; text-transform: uppercase;
+font-weight: 500; margin-bottom: 16px; display: flex; align-items: center; gap: 12px;
 }
-.section-label::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, rgba(201,168,76,0.13), transparent); }
+.section-label::after { content: ‘’; flex: 1; height: 1px; background: linear-gradient(to right, rgba(201,168,76,0.13), transparent); }
 .section-title { font-size: clamp(24px, 4vw, 42px); font-weight: 700; line-height: 1.3; margin-bottom: 40px; letter-spacing: 1px; }
 .divider { height: 1px; background: linear-gradient(to right, transparent, #2a2a2a, transparent); margin: 0 40px; }
 
@@ -116,7 +117,7 @@ body {
 .concept { padding: 100px 40px; max-width: 1200px; margin: 0 auto; }
 .concept-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: #2a2a2a; margin-top: 60px; }
 .concept-card { background: #111111; padding: 40px 32px; transition: background 0.3s; position: relative; overflow: hidden; }
-.concept-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: transparent; transition: background 0.3s; }
+.concept-card::before { content: ‘’; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: transparent; transition: background 0.3s; }
 .concept-card:hover { background: #161616; }
 .concept-card:hover::before { background: #c9a84c; }
 .concept-icon { font-size: 32px; margin-bottom: 16px; display: block; }
@@ -128,10 +129,10 @@ body {
 .dashboard-header { padding: 0 40px; max-width: 1400px; margin: 0 auto 40px; }
 .dash-tabs { display: flex; border-bottom: 1px solid #2a2a2a; padding: 0 40px; max-width: 1400px; margin: 0 auto; overflow-x: auto; }
 .dash-tab {
-  padding: 12px 24px; font-size: 12px; letter-spacing: 2px; color: #888880;
-  cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap;
-  transition: all 0.2s; background: none; border-top: none; border-left: none; border-right: none;
-  font-family: 'Noto Sans JP', sans-serif;
+padding: 12px 24px; font-size: 12px; letter-spacing: 2px; color: #888880;
+cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap;
+transition: all 0.2s; background: none; border-top: none; border-left: none; border-right: none;
+font-family: ‘Noto Sans JP’, sans-serif;
 }
 .dash-tab.active { color: #c9a84c; border-bottom-color: #c9a84c; }
 .dash-tab:hover { color: #e8c96a; }
@@ -145,7 +146,7 @@ body {
 .kpi-card:hover { border-color: rgba(201,168,76,0.27); }
 .kpi-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: #c9a84c; opacity: 0.4; }
 .kpi-label { font-size: 10px; letter-spacing: 2px; color: #888880; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
-.kpi-value { font-family: 'DM Mono', monospace; font-size: 36px; font-weight: 500; color: #e8e4dc; line-height: 1; }
+.kpi-value { font-family: ‘DM Mono’, monospace; font-size: 36px; font-weight: 500; color: #e8e4dc; line-height: 1; }
 .kpi-value .unit { font-size: 14px; font-weight: 400; color: #888880; margin-left: 4px; }
 .kpi-delta { font-size: 11px; margin-top: 8px; color: #4caf7d; }
 .kpi-delta.down { color: #c94c4c; }
@@ -163,7 +164,7 @@ canvas { max-width: 100%; }
 .month-col { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; gap: 4px; }
 .month-bar-inner { width: 100%; background: linear-gradient(to top, #c9a84c, rgba(232,201,106,0.27)); transition: height 0.8s cubic-bezier(0.4,0,0.2,1); min-height: 2px; }
 .month-label { font-size: 9px; color: #888880; letter-spacing: 1px; }
-.month-val { font-family: 'DM Mono', monospace; font-size: 10px; color: #c9a84c; }
+.month-val { font-family: ‘DM Mono’, monospace; font-size: 10px; color: #c9a84c; }
 
 /* IoT */
 .iot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 40px; }
@@ -174,16 +175,16 @@ canvas { max-width: 100%; }
 .iot-status.warn { background: #c97c4c; box-shadow: 0 0 6px #c97c4c; }
 .iot-status.off  { background: #444; box-shadow: none; animation: none; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
-.iot-value { font-family: 'DM Mono', monospace; font-size: 28px; color: #e8e4dc; line-height: 1; }
+.iot-value { font-family: ‘DM Mono’, monospace; font-size: 28px; color: #e8e4dc; line-height: 1; }
 .iot-unit { font-size: 11px; color: #888880; }
 .gauge-bar { height: 4px; background: #222; border-radius: 2px; overflow: hidden; }
 .gauge-fill { height: 100%; background: linear-gradient(to right, #4caf7d, #c9a84c); border-radius: 2px; transition: width 1s ease; }
 
 /* TIMELINE */
 .timeline { position: relative; padding-left: 24px; }
-.timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, #c9a84c, #2a2a2a); }
+.timeline::before { content: ‘’; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, #c9a84c, #2a2a2a); }
 .timeline-item { position: relative; padding: 0 0 28px 24px; }
-.timeline-item::before { content: ''; position: absolute; left: -4px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: #c9a84c; box-shadow: 0 0 8px rgba(201,168,76,0.5); }
+.timeline-item::before { content: ‘’; position: absolute; left: -4px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: #c9a84c; box-shadow: 0 0 8px rgba(201,168,76,0.5); }
 .timeline-date { font-size: 10px; letter-spacing: 2px; color: #c9a84c; margin-bottom: 4px; }
 .timeline-title { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
 .timeline-body { font-size: 12px; color: #888880; line-height: 1.6; }
@@ -208,7 +209,7 @@ canvas { max-width: 100%; }
 /* TABLE */
 .data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
 .data-table th { background: #181818; color: #888880; font-weight: 500; letter-spacing: 1px; padding: 12px 16px; text-align: left; border-bottom: 1px solid #2a2a2a; font-size: 10px; }
-.data-table td { padding: 10px 16px; border-bottom: 1px solid #1e1e1e; font-family: 'DM Mono', monospace; color: #aaa; }
+.data-table td { padding: 10px 16px; border-bottom: 1px solid #1e1e1e; font-family: ‘DM Mono’, monospace; color: #aaa; }
 .data-table tr:hover td { background: #161616; }
 .bar-inline { display: flex; align-items: center; gap: 8px; }
 .bar-inline-fill { height: 4px; min-width: 4px; }
@@ -217,8 +218,8 @@ canvas { max-width: 100%; }
 .programs { padding: 100px 40px; max-width: 1200px; margin: 0 auto; }
 .program-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #2a2a2a; margin-top: 60px; }
 .program-card { background: #111; padding: 40px 32px; position: relative; overflow: hidden; }
-.program-card::after { content: attr(data-num); position: absolute; bottom: -20px; right: 16px; font-family: 'Bebas Neue', sans-serif; font-size: 120px; color: rgba(201,168,76,0.04); line-height: 1; }
-.program-num { font-family: 'DM Mono', monospace; font-size: 11px; color: #c9a84c; letter-spacing: 2px; margin-bottom: 16px; }
+.program-card::after { content: attr(data-num); position: absolute; bottom: -20px; right: 16px; font-family: ‘Bebas Neue’, sans-serif; font-size: 120px; color: rgba(201,168,76,0.04); line-height: 1; }
+.program-num { font-family: ‘DM Mono’, monospace; font-size: 11px; color: #c9a84c; letter-spacing: 2px; margin-bottom: 16px; }
 .program-title { font-size: 17px; font-weight: 700; margin-bottom: 12px; line-height: 1.4; }
 .program-body { font-size: 12px; line-height: 1.8; color: #888880; margin-bottom: 20px; }
 .program-tags { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -226,7 +227,7 @@ canvas { max-width: 100%; }
 /* FOOTER */
 footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 40px; }
 .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
-.footer-brand { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: #c9a84c; letter-spacing: 2px; margin-bottom: 12px; }
+.footer-brand { font-family: ‘Bebas Neue’, sans-serif; font-size: 28px; color: #c9a84c; letter-spacing: 2px; margin-bottom: 12px; }
 .footer-desc { font-size: 12px; line-height: 1.8; color: #888880; }
 .footer-heading { font-size: 10px; letter-spacing: 3px; color: #c9a84c; margin-bottom: 20px; }
 .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -234,22 +235,40 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
 .footer-links a:hover { color: #c9a84c; }
 .footer-bottom { max-width: 1200px; margin: 0 auto; border-top: 1px solid #2a2a2a; padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #555; }
 
+/* CSV DROP ZONE */
+.csv-drop {
+border: 2px dashed #2a2a2a; padding: 48px 32px; text-align: center;
+transition: border-color 0.3s, background 0.3s; cursor: pointer; margin-bottom: 32px;
+}
+.csv-drop.hover { border-color: #c9a84c; background: rgba(201,168,76,0.04); }
+.csv-drop-icon { font-size: 40px; margin-bottom: 12px; }
+.csv-drop-label { font-size: 13px; color: #888880; letter-spacing: 1px; }
+.csv-drop-sub { font-size: 11px; color: #555; margin-top: 6px; }
+.csv-info-bar {
+display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 32px;
+padding: 16px 20px; background: rgba(201,168,76,0.05); border-left: 2px solid #c9a84c;
+}
+.csv-info-item { font-size: 11px; color: #888880; letter-spacing: 1px; }
+.csv-info-item strong { color: #c9a84c; font-family: ‘DM Mono’, monospace; margin-right: 4px; font-size: 16px; display: block; }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero { padding: 80px 24px 60px; }
-  .chart-grid, .chart-grid-3, .opinion-grid { grid-template-columns: 1fr; }
-  .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-  .nav-links { display: none; }
-  .concept-grid, .program-cards { grid-template-columns: 1fr; }
-  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-  .iot-grid { grid-template-columns: repeat(2, 1fr); }
-  .dash-content { padding: 24px 16px; }
+.hero { padding: 80px 24px 60px; }
+.chart-grid, .chart-grid-3, .opinion-grid { grid-template-columns: 1fr; }
+.footer-inner { grid-template-columns: 1fr; gap: 40px; }
+.nav-links { display: none; }
+.concept-grid, .program-cards { grid-template-columns: 1fr; }
+.kpi-grid { grid-template-columns: repeat(2, 1fr); }
+.iot-grid { grid-template-columns: repeat(2, 1fr); }
+.dash-content { padding: 24px 16px; }
 }
 </style>
+
 </head>
 <body>
 
 <!-- NAV -->
+
 <nav class="nav">
   <a class="nav-brand" href="#">SDP 🐾</a>
   <ul class="nav-links">
@@ -262,11 +281,12 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
 </nav>
 
 <!-- HERO -->
+
 <section class="hero" id="top">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-paw">🐾</div>
-  <div class="hero-eyebrow">SDP — 犬との共生空間</div>
+  <div class="hero-eyebrow">すみだ区立公園 — 犬との共生空間</div>
   <h1 class="hero-title">SUMIDA<br><span>DOG</span><br>PARK</h1>
   <p class="hero-subtitle">すみだドッグパーク</p>
   <div class="hero-stats-row">
@@ -295,11 +315,12 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
 </section>
 
 <!-- CONCEPT -->
+
 <section class="concept" id="concept">
   <div class="section-label">CONCEPT</div>
   <h2 class="section-title">単なるドッグランではない<br>——犬との共生を実現する場所</h2>
   <p style="color:#888880; font-size:14px; line-height:1.9; max-width:640px;">
-    すみだドッグパークは、ワンパスによるIoT連携チェックインシステムと運営データの可視化を軸に、地域コミュニティ・ペット防災・しつけ認定・集団予防接種までを包括する、新しい都市公園モデルの実践場です。
+    すみだドッグパークは、ワンパスによるIoT連携チェックインシステムと運営データの可視化を軸に、地域コミュニティ・ペット防災・しつけ認定・集団予防接種まで包括する、新しい都市公園モデルの実践場です。
   </p>
   <div class="concept-grid">
     <div class="concept-card">
@@ -315,7 +336,7 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
     <div class="concept-card">
       <span class="concept-icon">🎓</span>
       <div class="concept-card-title">しつけ認定 &amp; トレーニング</div>
-      <div class="concept-card-body">認定トレーナーによる月次トレーニングプログラム。修了犬には「すみだドッグパーク認定」を付与します。</div>
+      <div class="concept-card-body">認定トレーナーによる月次トレーニングプログラム。修了犬には「すみだパーク認定」を付与します。</div>
     </div>
     <div class="concept-card">
       <span class="concept-icon">💉</span>
@@ -338,6 +359,7 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
 <div class="divider"></div>
 
 <!-- DASHBOARD -->
+
 <section class="dashboard" id="dashboard">
   <div class="dashboard-header">
     <div class="section-label">MANAGEMENT DASHBOARD</div>
@@ -347,6 +369,7 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
   <div class="dash-tabs">
     <button class="dash-tab active" onclick="switchTab(this,'overview')">概況</button>
     <button class="dash-tab" onclick="switchTab(this,'monthly')">月別分析</button>
+    <button class="dash-tab" onclick="switchTab(this,'csv')">📂 CSV分析</button>
     <button class="dash-tab" onclick="switchTab(this,'iot')">IoT センサー</button>
     <button class="dash-tab" onclick="switchTab(this,'events')">イベント</button>
     <button class="dash-tab" onclick="switchTab(this,'raw')">日別データ</button>
@@ -354,292 +377,350 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
 
   <div class="dash-content">
 
-    <!-- OVERVIEW -->
-    <div class="dash-panel active" id="tab-overview">
-      <div class="kpi-grid">
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#c9a84c;"></div>
-          <div class="kpi-label">🐾 総チェックイン数</div>
-          <div class="kpi-value">12,016<span class="unit">回</span></div>
-          <div class="kpi-delta">▲ R6.12〜R7.3 累計</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#4caf7d;"></div>
-          <div class="kpi-label">📅 R7年度 合計</div>
-          <div class="kpi-value">10,291<span class="unit">回</span></div>
-          <div class="kpi-delta">▲ R6年度比 +497%</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#4c8fc9;"></div>
-          <div class="kpi-label">📊 日平均（R7年度）</div>
-          <div class="kpi-value">28.2<span class="unit">回/日</span></div>
-          <div class="kpi-delta">▲ R6年度 17.9から向上</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#c97c4c;"></div>
-          <div class="kpi-label">🏆 最多月（11月）</div>
-          <div class="kpi-value">1,137<span class="unit">回</span></div>
-          <div class="kpi-delta">日平均 37.9回</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#c9a84c;"></div>
-          <div class="kpi-label">🌅 土日祝 vs 平日</div>
-          <div class="kpi-value">2.8<span class="unit">倍</span></div>
-          <div class="kpi-delta">週末需要が圧倒的</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#4caf7d;"></div>
-          <div class="kpi-label">📆 オープン日数</div>
-          <div class="kpi-value">365<span class="unit">日</span></div>
-          <div class="kpi-delta">施設更新期間を除く</div>
-        </div>
-      </div>
+```
+<!-- OVERVIEW -->
+<div class="dash-panel active" id="tab-overview">
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#c9a84c;"></div>
+      <div class="kpi-label">🐾 総チェックイン数</div>
+      <div class="kpi-value">12,016<span class="unit">回</span></div>
+      <div class="kpi-delta">▲ R6.12〜R7.3 累計</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#4caf7d;"></div>
+      <div class="kpi-label">📅 R7年度 合計</div>
+      <div class="kpi-value">10,291<span class="unit">回</span></div>
+      <div class="kpi-delta">▲ R6年度比 +497%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#4c8fc9;"></div>
+      <div class="kpi-label">📊 日平均（R7年度）</div>
+      <div class="kpi-value">28.2<span class="unit">回/日</span></div>
+      <div class="kpi-delta">▲ R6年度 17.9から向上</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#c97c4c;"></div>
+      <div class="kpi-label">🏆 最多月（11月）</div>
+      <div class="kpi-value">1,137<span class="unit">回</span></div>
+      <div class="kpi-delta">日平均 37.9回</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#c9a84c;"></div>
+      <div class="kpi-label">🌅 土日祝 vs 平日</div>
+      <div class="kpi-value">2.8<span class="unit">倍</span></div>
+      <div class="kpi-delta">週末需要が圧倒的</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#4caf7d;"></div>
+      <div class="kpi-label">📆 オープン日数</div>
+      <div class="kpi-value">365<span class="unit">日</span></div>
+      <div class="kpi-delta">施設更新期間を除く</div>
+    </div>
+  </div>
 
-      <div class="chart-grid">
-        <div class="chart-card">
-          <div class="chart-title">月別チェックイン数推移（R6.12〜R7.3）<span class="chart-badge">ALL PERIODS</span></div>
-          <canvas id="chartAllMonths" height="200"></canvas>
-        </div>
-        <div class="chart-card">
-          <div class="chart-title">平日 vs 土日祝 比率<span class="chart-badge">WEEKDAY RATIO</span></div>
-          <canvas id="chartWeekday" height="200"></canvas>
-        </div>
-      </div>
+  <div class="chart-grid">
+    <div class="chart-card">
+      <div class="chart-title">月別チェックイン数推移（R6.12〜R7.3）<span class="chart-badge">ALL PERIODS</span></div>
+      <canvas id="chartAllMonths" height="200"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">平日 vs 土日祝 比率<span class="chart-badge">WEEKDAY RATIO</span></div>
+      <canvas id="chartWeekday" height="200"></canvas>
+    </div>
+  </div>
 
-      <div class="chart-grid-3">
-        <div class="chart-card">
-          <div class="chart-title">R6年度 月別</div>
-          <div class="month-bar-wrap" id="barR6"></div>
+  <div class="chart-grid-3">
+    <div class="chart-card">
+      <div class="chart-title">R6年度 月別</div>
+      <div class="month-bar-wrap" id="barR6"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">R7年度 前半（4〜9月）</div>
+      <div class="month-bar-wrap" id="barR7a"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">R7年度 後半（10〜3月）</div>
+      <div class="month-bar-wrap" id="barR7b"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MONTHLY -->
+<div class="dash-panel" id="tab-monthly">
+  <div class="kpi-grid" style="grid-template-columns:repeat(4,1fr);">
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#c9a84c;"></div>
+      <div class="kpi-label">最高記録</div>
+      <div class="kpi-value">112<span class="unit">回/日</span></div>
+      <div class="kpi-delta">2025.9.23（秋分の日）</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#4caf7d;"></div>
+      <div class="kpi-label">春の好調期</div>
+      <div class="kpi-value">33.7<span class="unit">回/日</span></div>
+      <div class="kpi-delta">4月平均（施設更新後）</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#4c8fc9;"></div>
+      <div class="kpi-label">夏の落ち込み</div>
+      <div class="kpi-value">19.5<span class="unit">回/日</span></div>
+      <div class="kpi-delta">8月平均（暑熱）</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-bar" style="background:#c97c4c;"></div>
+      <div class="kpi-label">秋の回復</div>
+      <div class="kpi-value">37.9<span class="unit">回/日</span></div>
+      <div class="kpi-delta">11月平均（最高）</div>
+    </div>
+  </div>
+  <div class="chart-card" style="margin-bottom:16px;">
+    <div class="chart-title">R7年度 月別詳細（平日・土日祝 内訳）</div>
+    <canvas id="chartMonthlyDetail" height="140"></canvas>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-card">
+      <div class="chart-title">日平均推移 — 季節変動</div>
+      <canvas id="chartDailyAvg" height="180"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">R6 vs R7 同月比較（12〜3月）</div>
+      <canvas id="chartYoY" height="180"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- CSV分析 -->
+<div class="dash-panel" id="tab-csv">
+
+  <!-- ドロップゾーン -->
+  <div class="csv-drop" id="csvDrop" onclick="document.getElementById('csvFileInput').click()">
+    <input type="file" id="csvFileInput" accept=".csv" style="display:none;">
+    <div class="csv-drop-icon">📂</div>
+    <div class="csv-drop-label">Wan!Pass CSV をドロップ または クリックして選択</div>
+    <div class="csv-drop-sub">チェックイン日時 / 犬種 / サイズ / 年代 を含むCSV</div>
+  </div>
+
+  <!-- サマリーバー（CSV読み込み後に更新） -->
+  <div class="csv-info-bar" id="csvInfoBar">
+    <div class="csv-info-item"><strong id="csvTotal">1,788</strong>総チェックイン数</div>
+    <div class="csv-info-item"><strong id="csvDays">48</strong>集計日数</div>
+    <div class="csv-info-item"><strong id="csvAvg">37.3</strong>日平均</div>
+    <div class="csv-info-item"><strong id="csvPeak">99</strong>単日最高（4/19）</div>
+    <div class="csv-info-item"><strong id="csvPeriod">2026-04〜05</strong>集計期間</div>
+  </div>
+
+  <!-- グラフ上段：日別 + 時間帯 -->
+  <div class="chart-grid" style="margin-bottom:16px;">
+    <div class="chart-card">
+      <div class="chart-title">日別チェックイン数<span class="chart-badge">DAILY</span></div>
+      <canvas id="csvChartDaily" height="160"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">時間帯別チェックイン数<span class="chart-badge">HOURLY</span></div>
+      <canvas id="csvChartHourly" height="160"></canvas>
+    </div>
+  </div>
+
+  <!-- グラフ下段：犬種 + サイズ + 年代 + 曜日 -->
+  <div class="chart-grid-3" style="margin-bottom:16px;">
+    <div class="chart-card">
+      <div class="chart-title">犬種TOP10<span class="chart-badge">BREED</span></div>
+      <canvas id="csvChartBreed" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">サイズ別構成<span class="chart-badge">SIZE</span></div>
+      <canvas id="csvChartSize" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">年代別<span class="chart-badge">AGE</span></div>
+      <canvas id="csvChartAge" height="220"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title">曜日別チェックイン数<span class="chart-badge">WEEKDAY</span></div>
+    <canvas id="csvChartWeekday" height="100"></canvas>
+  </div>
+
+</div><!-- /tab-csv -->
+
+<!-- IoT -->
+<div class="dash-panel" id="tab-iot">
+  <div style="margin-bottom:16px; padding:12px 16px; background:rgba(201,168,76,0.05); border-left:2px solid #c9a84c; font-size:12px; color:#888880;">
+    🔴 IoTセンサーは導入計画中です。以下はシミュレーションデータによるダッシュボードプロトタイプです。
+  </div>
+  <div class="iot-grid">
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">入場数（現在）</div><div class="iot-status"></div></div>
+      <div class="iot-value" id="iotPeople">—</div>
+      <div class="iot-unit">頭（リアルタイム）</div>
+      <div class="gauge-bar"><div class="gauge-fill" style="width:45%;"></div></div>
+    </div>
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">気温（外気温）</div><div class="iot-status warn"></div></div>
+      <div class="iot-value" id="iotTemp">—</div>
+      <div class="iot-unit">°C（ENVIS センサー）</div>
+      <div class="gauge-bar"><div class="gauge-fill" style="width:65%;"></div></div>
+    </div>
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">湿度</div><div class="iot-status"></div></div>
+      <div class="iot-value" id="iotHumid">—</div>
+      <div class="iot-unit">%RH</div>
+      <div class="gauge-bar"><div class="gauge-fill" style="width:72%;"></div></div>
+    </div>
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">WBGT（熱中症指数）</div><div class="iot-status warn"></div></div>
+      <div class="iot-value" id="iotWbgt">—</div>
+      <div class="iot-unit">（28↑は警戒）</div>
+      <div class="gauge-bar"><div class="gauge-fill" style="width:55%; background:linear-gradient(to right,#4caf7d,#c94c4c);"></div></div>
+    </div>
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">ゲート開放状況</div><div class="iot-status"></div></div>
+      <div class="iot-value" style="color:#4caf7d;">OPEN</div>
+      <div class="iot-unit">小型犬エリア ● 大型犬エリア</div>
+      <div style="font-size:10px; color:#888880; margin-top:4px;">閉場 17:00</div>
+    </div>
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">防犯カメラ</div><div class="iot-status"></div></div>
+      <div class="iot-value">2/2</div>
+      <div class="iot-unit">台 稼働中</div>
+      <div style="font-size:10px; color:#888880; margin-top:4px;">録画 ● ライブ確認可</div>
+    </div>
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">水飲み場 水圧</div><div class="iot-status"></div></div>
+      <div class="iot-value">正常</div>
+      <div class="iot-unit">流量センサー</div>
+      <div class="gauge-bar"><div class="gauge-fill" style="width:88%;"></div></div>
+    </div>
+    <div class="iot-card">
+      <div class="iot-header"><div class="iot-label">混雑レベル</div><div class="iot-status warn"></div></div>
+      <div class="iot-value" style="color:#c97c4c;">やや混雑</div>
+      <div class="iot-unit">大型犬エリア</div>
+      <div class="gauge-bar"><div class="gauge-fill" style="width:68%; background:linear-gradient(to right,#4caf7d,#c97c4c);"></div></div>
+    </div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-card">
+      <div class="chart-title">本日の時間別入場数（シミュレーション）</div>
+      <canvas id="chartHourly" height="160"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">IoT 導入ロードマップ</div>
+      <div class="timeline" style="margin-top:8px;">
+        <div class="timeline-item">
+          <div class="timeline-date">2024.12 — 実施済</div>
+          <div class="timeline-title">Wan!Pass チェックインシステム導入</div>
+          <div class="timeline-body">QRコードによる入退場管理。利用者データの蓄積開始。</div>
         </div>
-        <div class="chart-card">
-          <div class="chart-title">R7年度 前半（4〜9月）</div>
-          <div class="month-bar-wrap" id="barR7a"></div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025 Q2 — 検討中</div>
+          <div class="timeline-title">環境センサー設置</div>
+          <div class="timeline-body">気温・湿度・WBGT計測。猛暑日の自動アラート通知。<span class="tag">PLAN</span></div>
         </div>
-        <div class="chart-card">
-          <div class="chart-title">R7年度 後半（10〜3月）</div>
-          <div class="month-bar-wrap" id="barR7b"></div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025 Q3 — 計画</div>
+          <div class="timeline-title">混雑検知カメラ（AI解析）</div>
+          <div class="timeline-body">リアルタイム頭数カウント。サイネージへの混雑表示。<span class="tag blue">PLAN</span></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026 — 構想</div>
+          <div class="timeline-title">統合ダッシュボード公開</div>
+          <div class="timeline-body">このダッシュボードのリアルタイム版を一般公開。<span class="tag green">VISION</span></div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- MONTHLY -->
-    <div class="dash-panel" id="tab-monthly">
-      <div class="kpi-grid" style="grid-template-columns:repeat(4,1fr);">
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#c9a84c;"></div>
-          <div class="kpi-label">最高記録</div>
-          <div class="kpi-value">112<span class="unit">回/日</span></div>
-          <div class="kpi-delta">2025.9.23（秋分の日）</div>
+<!-- EVENTS -->
+<div class="dash-panel" id="tab-events">
+  <div class="chart-grid">
+    <div class="chart-card">
+      <div class="chart-title">運営イベント・施設更新履歴</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2024.12.12</div>
+          <div class="timeline-title">🎉 すみだドッグパーク オープン</div>
+          <div class="timeline-body">試験設置スタート。Wan!Passによるチェックイン開始。<span class="tag green">MILESTONE</span></div>
         </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#4caf7d;"></div>
-          <div class="kpi-label">春の好調期</div>
-          <div class="kpi-value">33.7<span class="unit">回/日</span></div>
-          <div class="kpi-delta">4月平均（施設更新後）</div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025.03.01〜03.21</div>
+          <div class="timeline-title">🔧 施設更新工事（第1回）</div>
+          <div class="timeline-body">フェンス・地面整備。更新前3月：124回 → 更新後：285回と大幅増加。<span class="tag">RENEWAL</span></div>
         </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#4c8fc9;"></div>
-          <div class="kpi-label">夏の落ち込み</div>
-          <div class="kpi-value">19.5<span class="unit">回/日</span></div>
-          <div class="kpi-delta">8月平均（暑熱）</div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025.04</div>
+          <div class="timeline-title">🌸 R7年度スタート ── 大幅増加</div>
+          <div class="timeline-body">月間1,011回を記録。施設更新効果と気候の好転が重なる。<span class="tag green">RECORD</span></div>
         </div>
-        <div class="kpi-card">
-          <div class="kpi-bar" style="background:#c97c4c;"></div>
-          <div class="kpi-label">秋の回復</div>
-          <div class="kpi-value">37.9<span class="unit">回/日</span></div>
-          <div class="kpi-delta">11月平均（最高）</div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025.09.23</div>
+          <div class="timeline-title">🏆 単日最高記録 112回</div>
+          <div class="timeline-body">秋分の日。気候の良さと祝日が重なり過去最高を更新。<span class="tag green">RECORD</span></div>
         </div>
-      </div>
-      <div class="chart-card" style="margin-bottom:16px;">
-        <div class="chart-title">R7年度 月別詳細（平日・土日祝 内訳）</div>
-        <canvas id="chartMonthlyDetail" height="140"></canvas>
-      </div>
-      <div class="chart-grid">
-        <div class="chart-card">
-          <div class="chart-title">日平均推移 — 季節変動</div>
-          <canvas id="chartDailyAvg" height="180"></canvas>
+        <div class="timeline-item">
+          <div class="timeline-date">2025.11</div>
+          <div class="timeline-title">🍂 月間最高記録 1,137回</div>
+          <div class="timeline-body">日平均37.9回。秋の気候が利用者を最大動員。<span class="tag green">RECORD</span></div>
         </div>
-        <div class="chart-card">
-          <div class="chart-title">R6 vs R7 同月比較（12〜3月）</div>
-          <canvas id="chartYoY" height="180"></canvas>
+        <div class="timeline-item">
+          <div class="timeline-date">2026 予定</div>
+          <div class="timeline-title">💉 集団予防接種会場化</div>
+          <div class="timeline-body">狂犬病・混合ワクチン集団接種の実施に向けて調整中。<span class="tag blue">PLAN</span></div>
         </div>
       </div>
     </div>
-
-    <!-- IoT -->
-    <div class="dash-panel" id="tab-iot">
-      <div style="margin-bottom:16px; padding:12px 16px; background:rgba(201,168,76,0.05); border-left:2px solid #c9a84c; font-size:12px; color:#888880;">
-        🔴 IoTセンサーは導入計画中です。以下はシミュレーションデータによるダッシュボードプロトタイプです。
-      </div>
-      <div class="iot-grid">
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">入場数（現在）</div><div class="iot-status"></div></div>
-          <div class="iot-value" id="iotPeople">—</div>
-          <div class="iot-unit">頭（リアルタイム）</div>
-          <div class="gauge-bar"><div class="gauge-fill" style="width:45%;"></div></div>
+    <div class="chart-card">
+      <div class="chart-title">プログラム予定</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">毎月第2土曜</div>
+          <div class="timeline-title">🐕 しつけトレーニング教室</div>
+          <div class="timeline-body">認定トレーナーによる基礎しつけ講習。参加費無料（区民限定）。<span class="tag green">定例</span></div>
         </div>
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">気温（外気温）</div><div class="iot-status warn"></div></div>
-          <div class="iot-value" id="iotTemp">—</div>
-          <div class="iot-unit">°C（ENVIS センサー）</div>
-          <div class="gauge-bar"><div class="gauge-fill" style="width:65%;"></div></div>
+        <div class="timeline-item">
+          <div class="timeline-date">年2回（春・秋）</div>
+          <div class="timeline-title">🚨 ペット防災訓練</div>
+          <div class="timeline-body">同行避難の手順確認。防災グッズの展示・配布。<span class="tag">定例</span></div>
         </div>
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">湿度</div><div class="iot-status"></div></div>
-          <div class="iot-value" id="iotHumid">—</div>
-          <div class="iot-unit">%RH</div>
-          <div class="gauge-bar"><div class="gauge-fill" style="width:72%;"></div></div>
+        <div class="timeline-item">
+          <div class="timeline-date">毎年4月</div>
+          <div class="timeline-title">💉 狂犬病集団予防接種</div>
+          <div class="timeline-body">獣医師会と連携。会場として積極活用を検討中。<span class="tag blue">検討中</span></div>
         </div>
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">WBGT（熱中症指数）</div><div class="iot-status warn"></div></div>
-          <div class="iot-value" id="iotWbgt">—</div>
-          <div class="iot-unit">（28↑は警戒）</div>
-          <div class="gauge-bar"><div class="gauge-fill" style="width:55%; background:linear-gradient(to right,#4caf7d,#c94c4c);"></div></div>
-        </div>
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">ゲート開放状況</div><div class="iot-status"></div></div>
-          <div class="iot-value" style="color:#4caf7d;">OPEN</div>
-          <div class="iot-unit">小型犬エリア ● 大型犬エリア</div>
-          <div style="font-size:10px; color:#888880; margin-top:4px;">閉場 17:00</div>
-        </div>
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">防犯カメラ</div><div class="iot-status"></div></div>
-          <div class="iot-value">2/2</div>
-          <div class="iot-unit">台 稼働中</div>
-          <div style="font-size:10px; color:#888880; margin-top:4px;">録画 ● ライブ確認可</div>
-        </div>
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">水飲み場 水圧</div><div class="iot-status"></div></div>
-          <div class="iot-value">正常</div>
-          <div class="iot-unit">流量センサー</div>
-          <div class="gauge-bar"><div class="gauge-fill" style="width:88%;"></div></div>
-        </div>
-        <div class="iot-card">
-          <div class="iot-header"><div class="iot-label">混雑レベル</div><div class="iot-status warn"></div></div>
-          <div class="iot-value" style="color:#c97c4c;">やや混雑</div>
-          <div class="iot-unit">大型犬エリア</div>
-          <div class="gauge-bar"><div class="gauge-fill" style="width:68%; background:linear-gradient(to right,#4caf7d,#c97c4c);"></div></div>
-        </div>
-      </div>
-      <div class="chart-grid">
-        <div class="chart-card">
-          <div class="chart-title">本日の時間別入場数（シミュレーション）</div>
-          <canvas id="chartHourly" height="160"></canvas>
-        </div>
-        <div class="chart-card">
-          <div class="chart-title">IoT 導入ロードマップ</div>
-          <div class="timeline" style="margin-top:8px;">
-            <div class="timeline-item">
-              <div class="timeline-date">2024.12 — 実施済</div>
-              <div class="timeline-title">Wan!Pass チェックインシステム導入</div>
-              <div class="timeline-body">QRコードによる入退場管理。利用者データの蓄積開始。</div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025 Q2 — 検討中</div>
-              <div class="timeline-title">環境センサー設置</div>
-              <div class="timeline-body">気温・湿度・WBGT計測。猛暑日の自動アラート通知。<span class="tag">PLAN</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025 Q3 — 計画</div>
-              <div class="timeline-title">混雑検知カメラ（AI解析）</div>
-              <div class="timeline-body">リアルタイム頭数カウント。サイネージへの混雑表示。<span class="tag blue">PLAN</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2026 — 構想</div>
-              <div class="timeline-title">統合ダッシュボード公開</div>
-              <div class="timeline-body">このダッシュボードのリアルタイム版を一般公開。<span class="tag green">VISION</span></div>
-            </div>
-          </div>
+        <div class="timeline-item">
+          <div class="timeline-date">随時</div>
+          <div class="timeline-title">📋 利用者意見フォーム回収</div>
+          <div class="timeline-body">QRコードで常時回収。月次で集計・反映。<span class="tag">継続</span></div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- EVENTS -->
-    <div class="dash-panel" id="tab-events">
-      <div class="chart-grid">
-        <div class="chart-card">
-          <div class="chart-title">運営イベント・施設更新履歴</div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-date">2024.12.12</div>
-              <div class="timeline-title">🎉 すみだドッグパーク オープン</div>
-              <div class="timeline-body">試験設置スタート。Wan!Passによるチェックイン開始。<span class="tag green">MILESTONE</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.03.01〜03.21</div>
-              <div class="timeline-title">🔧 施設更新工事（第1回）</div>
-              <div class="timeline-body">フェンス・地面整備。更新前3月：124回 → 更新後：285回と大幅増加。<span class="tag">RENEWAL</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.04</div>
-              <div class="timeline-title">🌸 R7年度スタート ── 大幅増加</div>
-              <div class="timeline-body">月間1,011回を記録。施設更新効果と気候の好転が重なる。<span class="tag green">RECORD</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.09.23</div>
-              <div class="timeline-title">🏆 単日最高記録 112回</div>
-              <div class="timeline-body">秋分の日。気候の良さと祝日が重なり過去最高を更新。<span class="tag green">RECORD</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.11</div>
-              <div class="timeline-title">🍂 月間最高記録 1,137回</div>
-              <div class="timeline-body">日平均37.9回。秋の気候が利用者を最大動員。<span class="tag green">RECORD</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2026 予定</div>
-              <div class="timeline-title">💉 集団予防接種会場化</div>
-              <div class="timeline-body">狂犬病・混合ワクチン集団接種の実施に向けて調整中。<span class="tag blue">PLAN</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="chart-card">
-          <div class="chart-title">プログラム予定</div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-date">毎月第2土曜</div>
-              <div class="timeline-title">🐕 しつけトレーニング教室</div>
-              <div class="timeline-body">認定トレーナーによる基礎しつけ講習。参加費無料（区民限定）。<span class="tag green">定例</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">年2回（春・秋）</div>
-              <div class="timeline-title">🚨 ペット防災訓練</div>
-              <div class="timeline-body">同行避難の手順確認。防災グッズの展示・配布。<span class="tag">定例</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">毎年4月</div>
-              <div class="timeline-title">💉 狂犬病集団予防接種</div>
-              <div class="timeline-body">獣医師会と連携。会場として積極活用を検討中。<span class="tag blue">検討中</span></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">随時</div>
-              <div class="timeline-title">📋 利用者意見フォーム回収</div>
-              <div class="timeline-body">QRコードで常時回収。月次で集計・反映。<span class="tag">継続</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RAW DATA -->
-    <div class="dash-panel" id="tab-raw">
-      <div class="chart-card" style="overflow-x:auto;">
-        <div class="chart-title">月別集計データ（全期間）</div>
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>年度</th><th>月</th><th>合計</th><th>平日</th>
-              <th>土日祝</th><th>日平均</th><th>備考</th><th>グラフ</th>
-            </tr>
-          </thead>
-          <tbody id="rawTableBody"></tbody>
-        </table>
-      </div>
-    </div>
+<!-- RAW DATA -->
+<div class="dash-panel" id="tab-raw">
+  <div class="chart-card" style="overflow-x:auto;">
+    <div class="chart-title">月別集計データ（全期間）</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>年度</th><th>月</th><th>合計</th><th>平日</th>
+          <th>土日祝</th><th>日平均</th><th>備考</th><th>グラフ</th>
+        </tr>
+      </thead>
+      <tbody id="rawTableBody"></tbody>
+    </table>
+  </div>
+</div>
+```
 
   </div><!-- /dash-content -->
 </section>
 
 <!-- PROGRAMS -->
+
 <section class="programs" id="programs">
   <div class="section-label">PROGRAMS &amp; VISION</div>
   <h2 class="section-title">犬との共生を実現する<br>5つの柱</h2>
@@ -678,6 +759,7 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
 </section>
 
 <!-- OPINIONS -->
+
 <section id="opinions" style="padding:80px 40px; background:#0d0d0d; border-top:1px solid #2a2a2a;">
   <div style="max-width:1200px; margin:0 auto;">
     <div class="section-label">VOICE OF USERS</div>
@@ -688,12 +770,12 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
         <div class="chart-title" style="margin-bottom:16px;">最近のご意見</div>
         <div class="opinion-item">
           <div class="opinion-meta"><span class="opinion-category">施設改善</span><span class="opinion-date">2025.11</span></div>
-          <div class="opinion-text">地面が土なので、人工芝かウッドチップを敷いて欲しいです。</div>
+          <div class="opinion-text">水飲み場の水が温くなりやすいので、夏場は冷水対応にしてほしいです。犬が喜んで使っています。</div>
           <div class="star-rating">★★★★☆</div>
         </div>
         <div class="opinion-item">
           <div class="opinion-meta"><span class="opinion-category">イベント要望</span><span class="opinion-date">2025.10</span></div>
-          <div class="opinion-text">定期的なしつけトレーニングがあると嬉しいです。初心者向けの内容で、飼い主同士の交流も深まると思います。</div>
+          <div class="opinion-text">定期的なトレーニング教室があると嬉しいです。初心者向けの内容で、飼い主同士の交流も深まると思います。</div>
           <div class="star-rating">★★★★★</div>
         </div>
         <div class="opinion-item">
@@ -719,6 +801,7 @@ footer { background: #070707; border-top: 1px solid #2a2a2a; padding: 60px 40px 
 </section>
 
 <!-- FOOTER -->
+
 <footer>
   <div class="footer-inner">
     <div>
@@ -1008,7 +1091,284 @@ function updateIoT() {
 updateIoT();
 setInterval(updateIoT, 5000);
 
-// ===== SCROLL ANIMATION =====
+// ===== CSV 分析機能 =====
+
+// 初期データ（2026-04〜05 実績）
+var CSV_INIT = {
+  daily: {"2026-04-01":3,"2026-04-02":5,"2026-04-03":17,"2026-04-04":7,"2026-04-05":81,"2026-04-06":21,"2026-04-07":9,"2026-04-08":33,"2026-04-09":22,"2026-04-10":1,"2026-04-11":84,"2026-04-12":77,"2026-04-13":18,"2026-04-14":17,"2026-04-15":14,"2026-04-16":23,"2026-04-17":17,"2026-04-18":67,"2026-04-19":99,"2026-04-20":26,"2026-04-21":17,"2026-04-22":13,"2026-04-23":8,"2026-04-24":12,"2026-04-25":57,"2026-04-26":93,"2026-04-27":4,"2026-04-28":21,"2026-04-29":61,"2026-04-30":26,"2026-05-01":4,"2026-05-02":87,"2026-05-03":72,"2026-05-04":50,"2026-05-05":88,"2026-05-06":73,"2026-05-07":12,"2026-05-08":24,"2026-05-09":77,"2026-05-10":94,"2026-05-11":19,"2026-05-12":25,"2026-05-13":20,"2026-05-14":17,"2026-05-15":22,"2026-05-16":67,"2026-05-17":56,"2026-05-18":28},
+  hourly: {"6":3,"7":58,"8":72,"9":86,"10":126,"11":137,"12":152,"13":167,"14":203,"15":245,"16":215,"17":202,"18":113,"19":6},
+  breed: [["ミックス",413],["トイプードル",271],["ポメラニアン",119],["チワワ",91],["柴犬",77],["豆柴",64],["ジャック・ラッセル・テリア",55],["ミニチュアダックスフンド",52],["イタリアン・グレーハウンド",51],["パグ",49]],
+  size: {"小型":1524,"中型":247,"大型":17},
+  age: {"10代":3,"20代":253,"30代":545,"40代":247,"50代":219,"60代":93,"70代":41,"未記入":387},
+  weekday: {"月":166,"火":177,"水":217,"木":113,"金":97,"土":446,"日":572}
+};
+
+// Chart instances（更新のため保持）
+var csvCharts = {};
+
+function initCsvCharts(data) {
+  var dailyLabels = Object.keys(data.daily);
+  var dailyVals   = Object.values(data.daily);
+  var total = dailyVals.reduce(function(s,v){ return s+v; }, 0);
+  var days  = dailyLabels.length;
+  var avg   = (total / days).toFixed(1);
+  var peak  = Math.max.apply(null, dailyVals);
+  var peakDate = dailyLabels[dailyVals.indexOf(peak)];
+  var period = dailyLabels[0].slice(0,7) + '〜' + dailyLabels[dailyLabels.length-1].slice(0,7);
+
+  // サマリー更新
+  document.getElementById('csvTotal').textContent  = total.toLocaleString();
+  document.getElementById('csvDays').textContent   = days;
+  document.getElementById('csvAvg').textContent    = avg;
+  document.getElementById('csvPeak').textContent   = peak + '（' + peakDate.slice(5) + '）';
+  document.getElementById('csvPeriod').textContent = period;
+
+  // 日別棒グラフ — 土日色分け
+  var dayColors = dailyLabels.map(function(d) {
+    var wd = new Date(d).getDay();
+    return (wd === 0 || wd === 6) ? GOLD_DIM : GREEN_DIM;
+  });
+  var dayBorders = dailyLabels.map(function(d) {
+    var wd = new Date(d).getDay();
+    return (wd === 0 || wd === 6) ? GOLD : GREEN;
+  });
+
+  if (csvCharts.daily) { csvCharts.daily.destroy(); }
+  csvCharts.daily = new Chart(document.getElementById('csvChartDaily'), {
+    type: 'bar',
+    data: {
+      labels: dailyLabels.map(function(d){ return d.slice(5); }),
+      datasets: [{
+        data: dailyVals,
+        backgroundColor: dayColors,
+        borderColor: dayBorders,
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: function(ctx){ return ' ' + ctx.raw + '回'; } } }
+      },
+      scales: {
+        y: { grid: { color: '#1e1e1e' }, ticks: { color: '#555' } },
+        x: { grid: { display: false }, ticks: { color: '#555', maxRotation: 45, font: { size: 9 } } }
+      }
+    }
+  });
+
+  // 時間帯
+  var hourLabels = Object.keys(data.hourly).map(function(h){ return h + '時'; });
+  var hourVals   = Object.values(data.hourly);
+  if (csvCharts.hourly) { csvCharts.hourly.destroy(); }
+  csvCharts.hourly = new Chart(document.getElementById('csvChartHourly'), {
+    type: 'line',
+    data: {
+      labels: hourLabels,
+      datasets: [{
+        data: hourVals,
+        borderColor: GOLD, backgroundColor: GOLD_DIM, borderWidth: 2,
+        pointBackgroundColor: GOLD, pointRadius: 3, tension: 0.4, fill: true
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { grid: { color: '#1e1e1e' }, ticks: { color: '#555' } },
+        x: { grid: { display: false }, ticks: { color: '#555' } }
+      }
+    }
+  });
+
+  // 犬種
+  var breedLabels = data.breed.map(function(b){ return b[0]; });
+  var breedVals   = data.breed.map(function(b){ return b[1]; });
+  if (csvCharts.breed) { csvCharts.breed.destroy(); }
+  csvCharts.breed = new Chart(document.getElementById('csvChartBreed'), {
+    type: 'bar',
+    data: {
+      labels: breedLabels,
+      datasets: [{
+        data: breedVals,
+        backgroundColor: GOLD_DIM, borderColor: GOLD, borderWidth: 1
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#1e1e1e' }, ticks: { color: '#555' } },
+        y: { grid: { display: false }, ticks: { color: '#aaa', font: { size: 10 } } }
+      }
+    }
+  });
+
+  // サイズ
+  if (csvCharts.size) { csvCharts.size.destroy(); }
+  csvCharts.size = new Chart(document.getElementById('csvChartSize'), {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(data.size),
+      datasets: [{
+        data: Object.values(data.size),
+        backgroundColor: [GOLD_DIM, BLUE_DIM, GREEN_DIM],
+        borderColor: [GOLD, BLUE, GREEN],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      plugins: {
+        legend: { labels: { color: '#888880' } },
+        tooltip: { callbacks: { label: function(ctx){
+          var t = Object.values(data.size).reduce(function(s,v){return s+v;},0);
+          return ' ' + ctx.label + ': ' + ctx.raw.toLocaleString() + '（' + Math.round(ctx.raw/t*100) + '%）';
+        }}}
+      }
+    }
+  });
+
+  // 年代
+  var ageOrder = ['10代','20代','30代','40代','50代','60代','70代','未記入'];
+  var ageVals  = ageOrder.map(function(a){ return data.age[a] || 0; });
+  if (csvCharts.age) { csvCharts.age.destroy(); }
+  csvCharts.age = new Chart(document.getElementById('csvChartAge'), {
+    type: 'bar',
+    data: {
+      labels: ageOrder,
+      datasets: [{
+        data: ageVals,
+        backgroundColor: BLUE_DIM, borderColor: BLUE, borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { grid: { color: '#1e1e1e' }, ticks: { color: '#555' } },
+        x: { grid: { display: false }, ticks: { color: '#555' } }
+      }
+    }
+  });
+
+  // 曜日
+  var wdLabels = ['月','火','水','木','金','土','日'];
+  var wdVals   = wdLabels.map(function(w){ return data.weekday[w] || 0; });
+  var wdColors = wdLabels.map(function(w){ return (w === '土' || w === '日') ? GOLD_DIM : GREEN_DIM; });
+  var wdBorders= wdLabels.map(function(w){ return (w === '土' || w === '日') ? GOLD : GREEN; });
+  if (csvCharts.weekday) { csvCharts.weekday.destroy(); }
+  csvCharts.weekday = new Chart(document.getElementById('csvChartWeekday'), {
+    type: 'bar',
+    data: {
+      labels: wdLabels,
+      datasets: [{
+        data: wdVals,
+        backgroundColor: wdColors, borderColor: wdBorders, borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { grid: { color: '#1e1e1e' }, ticks: { color: '#555' } },
+        x: { grid: { display: false }, ticks: { color: '#aaa', font: { size: 13 } } }
+      }
+    }
+  });
+}
+
+// 初期データで描画
+initCsvCharts(CSV_INIT);
+
+// CSV パース
+function parseCsvData(text) {
+  var lines = text.trim().split('\n');
+  // BOM除去
+  if (lines[0].charCodeAt(0) === 0xFEFF) { lines[0] = lines[0].slice(1); }
+  var headers = lines[0].split(',');
+  var idxDate  = headers.indexOf('チェックイン日時');
+  var idxBreed = headers.indexOf('犬種');
+  var idxSize  = headers.indexOf('サイズ');
+  var idxAge   = headers.indexOf('年代');
+
+  var daily = {};
+  var hourly = {};
+  var breedCnt = {};
+  var sizeCnt  = {};
+  var ageCnt   = {};
+  var wdCnt    = {'月':0,'火':0,'水':0,'木':0,'金':0,'土':0,'日':0};
+  var wdMap    = [null,'月','火','水','木','金','土','日'];
+
+  for (var i = 1; i < lines.length; i++) {
+    var cols = lines[i].split(',');
+    if (!cols[idxDate]) { continue; }
+    var dtStr = cols[idxDate].replace('"','').trim();
+    var dt    = new Date(dtStr);
+    if (isNaN(dt)) { continue; }
+
+    var dateKey = dtStr.slice(0, 10);
+    daily[dateKey]  = (daily[dateKey] || 0) + 1;
+
+    var h = dt.getHours().toString();
+    hourly[h] = (hourly[h] || 0) + 1;
+
+    var b = (cols[idxBreed] || '').split('（')[0].trim() || '不明';
+    breedCnt[b] = (breedCnt[b] || 0) + 1;
+
+    var s = (cols[idxSize] || '').trim() || '不明';
+    sizeCnt[s] = (sizeCnt[s] || 0) + 1;
+
+    var a = (cols[idxAge] || '').trim() || '未記入';
+    ageCnt[a] = (ageCnt[a] || 0) + 1;
+
+    var wd = dt.getDay();
+    if (wdMap[wd]) { wdCnt[wdMap[wd]]++; }
+  }
+
+  // 犬種ソート
+  var breedArr = Object.keys(breedCnt).map(function(k){ return [k, breedCnt[k]]; });
+  breedArr.sort(function(a,b){ return b[1]-a[1]; });
+
+  // hourlyを6〜19で整形
+  var hourlyOut = {};
+  for (var hh = 6; hh <= 19; hh++) { hourlyOut[hh.toString()] = hourly[hh.toString()] || 0; }
+
+  return { daily: daily, hourly: hourlyOut, breed: breedArr.slice(0,10), size: sizeCnt, age: ageCnt, weekday: wdCnt };
+}
+
+// ファイル選択
+document.getElementById('csvFileInput').addEventListener('change', function(e) {
+  var file = e.target.files[0];
+  if (!file) { return; }
+  var reader = new FileReader();
+  reader.onload = function(ev) {
+    var data = parseCsvData(ev.target.result);
+    initCsvCharts(data);
+  };
+  reader.readAsText(file, 'UTF-8');
+});
+
+// ドラッグ&ドロップ
+var dropZone = document.getElementById('csvDrop');
+dropZone.addEventListener('dragover', function(e) {
+  e.preventDefault();
+  dropZone.classList.add('hover');
+});
+dropZone.addEventListener('dragleave', function() {
+  dropZone.classList.remove('hover');
+});
+dropZone.addEventListener('drop', function(e) {
+  e.preventDefault();
+  dropZone.classList.remove('hover');
+  var file = e.dataTransfer.files[0];
+  if (!file) { return; }
+  var reader = new FileReader();
+  reader.onload = function(ev) {
+    var data = parseCsvData(ev.target.result);
+    initCsvCharts(data);
+  };
+  reader.readAsText(file, 'UTF-8');
+});
+
+
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(function(e) {
     if (e.isIntersecting) {
@@ -1025,5 +1385,6 @@ document.querySelectorAll('.concept-card, .kpi-card, .program-card, .iot-card').
   observer.observe(el);
 });
 </script>
+
 </body>
 </html>
